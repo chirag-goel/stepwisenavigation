@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #3F51B5;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 0.9em;
+	color: white;
+}
+
+
+.heading {
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+form {
+	margin-top: 20px;
+}
+
+form input {
+	text-align: 20px;
+	height: 20px;
+	border-radius: 5px;
+	padding-left: 50px;
+	width: 100px;
+}
+
+.pred {
+	margin-top: 50px;
+}
+
+#number {
+	font-size: 1.2em;
+}
+
+.page2 {
+	display: none;
+	/*visibility: hidden;*/
+	/*height: 0;*/
+}
+
+#map { 
+	/*display: none;*/
+	padding: 0;
+    position : absolute !important; 
+    top : 40px !important;  
+    right : 0; 
+    bottom : 40px !important;  
+    left : 0 !important;   
+    height: 500px;
+}
+
+#instructions {
+	margin-top: 550px;
+}

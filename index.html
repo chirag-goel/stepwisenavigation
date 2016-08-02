@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HackDay</title>
+	 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="gmaps/gmaps.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="anim.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWE1veLPX9oz43amLA5wuGMA1SHLnK7UY"></script>
+</head>
+<script type="text/javascript">
+	// var recognition = new webkitSpeechRecognition();
+ //    recognition.onresult = function(event) {
+ //      if (event.results.length > 0) {
+ //        q.value = event.results[0][0].transcript;
+ //        // q.form.submit();
+ //      }
+ //    }
+
+
+</script>
+<body>
+	<div class="index page1">
+		<div class="heading">Let's Walk</div>
+		<form>
+			May we please know you height? <br/>
+			<input type="number" id="height" placeholder="height">
+			<br>
+			<br>
+			<br>
+			May we please know you weight? <br/>
+			<input type="number" id="weight" placeholder="weight" onkeyup="approx_stride()">
+		</form>
+		<div class="pred">
+			Your predicted stride length (in cm) is:<br/>
+			<div id="number">65</div>
+		</div>
+	</div>
+	<div class="page2">
+		<div id="map"></div>
+		<input type="search" id="q" name="q" size="60">
+    <input type="button" value="Click to Speak" onclick="recognition.start()">
+	</div>
+</body>
+</html>
